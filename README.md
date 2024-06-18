@@ -38,7 +38,9 @@ In addition to or in absence of company guidelines, the report could consist of 
 
 - **`main.tex`**: Main LaTeX file where the document class, packages, and structure are defined.
 - **`figs/`**: Directory to store figures and images used in the report.
-- **`references.bib`**: BibTeX file for managing references and citations.
+- **`ref.bib`**: BibTeX file for managing references and citations.
+- **`z_appendix.tex`**: LaTeX file for documend appendixes.
+- **`z_commands.tex`**: LaTeX file where the user defined commands are.
 
 ## Contributing
 
