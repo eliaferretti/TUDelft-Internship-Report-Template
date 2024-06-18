@@ -1,0 +1,71 @@
+                                           
+% ---------------------------------------------------
+%
+%       This report template was created
+%       by Elia Ferretti
+% 
+%       contact: eliaferrettu@outlook.it
+%
+%       June 2024 - Rijswijk, NL
+%
+% ---------------------------------------------------
+
+\documentclass[10pt,a4paper]{report}
+
+\usepackage[a4paper, left=0.8in, right=0.8in, top=0.8in, bottom=0.8in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{adjustbox}
+\usepackage{csquotes}
+\usepackage{comment}
+\usepackage{imakeidx}
+\usepackage{float} % for the H specifier
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[hidelinks]{hyperref}
+\usepackage[toc,acronym,nopostdot,nonumberlist]{glossaries}
+\usepackage{titling}
+\usepackage{tikzpagenodes}
+\usepackage[ddmmyyyy]{datetime}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage[version=4]{mhchem}
+\usepackage{parskip}
+\usepackage{caption}
+\usepackage{biblatex}
+\usepackage{appendix}
+
+% Define a custom font for captions
+\captionsetup{ font={rm,small}} % example: times new roman & small
+
+
+\addbibresource{ref.bib}
+
+\doublespacing
+
+
+\input{z_commands}              % Include custom commands from a separate file
+
+\begin{document}
+
+    \input{_frontpage}
+    
+    \tableofcontents \newpage
+
+    \input{_symbols-list}
+    
+    \input{company}
+    \input{project}
+    \input{}
+    \input{conclusion}
+    
+    \addcontentsline{toc}{chapter}{References}
+    \printbibliography[title={References}] \newpage
+
+    \appendix \addcontentsline{toc}{chapter}{Appendix}
+    \input{z_appendix}
+
+\end{document}
